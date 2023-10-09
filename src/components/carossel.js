@@ -1,17 +1,24 @@
+import img1 from "../static/fundo.avif";
+
 export default function Carousel() {
   const images = [
     {
-      src: "/images/image1.jpg",
+      src: { img1 },
       alt: "Imagem 1",
     },
     {
-      src: "/images/image2.jpg",
+      src: { img1 },
       alt: "Imagem 2",
     },
     {
-      src: "/images/image3.jpg",
+      src: { img1 },
       alt: "Imagem 3",
     },
   ];
-  return <div></div>;
+  return (
+    <div>
+      <Carousel images={images} />
+      <img src={img1} alt="img1" />
+    </div>
+  );
 }
