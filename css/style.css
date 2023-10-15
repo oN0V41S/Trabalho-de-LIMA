@@ -63,7 +63,7 @@ main img {
     border-radius: 5px;
     box-shadow: 3px 4px 10px #303030;
 }
-main img:hover{
+main img:hover, main img:focus{
     box-shadow: 4px 4px 15px #606060;
     transition: box-shadow 0.7s ease-in-out;
 }
