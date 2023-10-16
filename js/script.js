@@ -16,9 +16,9 @@ let Imagens = () => {
 
         for(let i = 1; i < imagens.length; i++){
           imagensHTML += `<img src="${imagens[i]}" />`;
+          container.innerHTML = imagensHTML;
         }
   
-        container.innerHTML = imagensHTML;
   
       });
   }
