@@ -14,10 +14,10 @@ let Imagens = () => {
   
         let imagensHTML;
 
-        for(let i = 1; i < imagens.length; i++){
+        for(let i = 0; i < imagens.length; i++){
           imagensHTML += `<img src="${imagens[i]}" />`;
-          container.innerHTML = imagensHTML;
         }
+        container.innerHTML = imagensHTML;
   
   
       });
