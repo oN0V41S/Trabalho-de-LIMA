@@ -66,8 +66,6 @@ main img {
 main img:hover, main img:focus{
     box-shadow: 4px 4px 15px #606060;
     transition: box-shadow 0.7s ease-in-out;
-    width: 27vh;
-    height: 32vh;
 }
 
 main .maisvistos{
