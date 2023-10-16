@@ -13,6 +13,7 @@ let Imagens = () => {
         }
   
         let imagensHTML = `<img src="${imagens[0]}" />`;
+        container.innerHTML = imagensHTML;
 
         for(let i = 1; i < imagens.length; i++){
           imagensHTML += `<img src="${imagens[i]}" />`;
