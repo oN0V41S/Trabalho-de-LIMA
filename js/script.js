@@ -12,10 +12,7 @@ let Imagens = () => {
           imagens.push(dados.items[i].image);
         }
   
-        // let imagensHTML = 0;
-        let imagensHTML;
-        let imagensHTML +=  `<img src="${imagens[0]}" />`;
-
+        let imagensHTML = 0;
 
         for(let i = 0; i < imagens.length; i++){
           imagensHTML += `<img src="${imagens[i]}" />`;
