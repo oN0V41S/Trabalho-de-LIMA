@@ -7,20 +7,23 @@ let Imagens = () => {
         
         const imagens = [];
         const container = document.getElementById('mais-vistos');
+        let imagensHTML = [];
   
+        // Salvando imagens localmente
         for (let i = 0; i < dados.items.length; i++) {
           imagens.push(dados.items[i].image);
         }
-  
-        let imagensHTML = 0;
 
+        // Formatando Imagens para serem inseridas no HTMl
         for(let i = 0; i < imagens.length; i++){
-          imagensHTML += `<img src="${imagens[i]}" />`;
+          imagensHTML.push(`<img src="${imagens[i]}" />`);
         }
-        container.innerHTML = imagensHTML;
-  
-  
+
+        // Inserindo imagens no HTML
+        for(let i = 0; i < imagensHTML.length; i++){
+          container.innerHTML += imagensHTML[i];
+        }
       });
   }
   
-  Imagens();
+Imagens();
